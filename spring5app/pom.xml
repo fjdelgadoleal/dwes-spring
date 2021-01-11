@@ -21,6 +21,7 @@
   </build>
   <properties>
   	<org.springframework.version>5.3.2</org.springframework.version>
+  	<org.springframework.data.version>2.4.2</org.springframework.data.version>
   </properties>
   <dependencies>
   	<dependency>
@@ -64,6 +65,21 @@
   		<groupId>org.hibernate.validator</groupId>
   		<artifactId>hibernate-validator</artifactId>
   		<version>7.0.0.Final</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>mysql</groupId>
+  		<artifactId>mysql-connector-java</artifactId>
+  		<version>8.0.22</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.hibernate</groupId>
+  		<artifactId>hibernate-core</artifactId>
+  		<version>5.4.27.Final</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework.data</groupId>
+  		<artifactId>spring-data-jpa</artifactId>
+  		<version>${org.springframework.data.version}</version>
   	</dependency>
   </dependencies>
 </project>
