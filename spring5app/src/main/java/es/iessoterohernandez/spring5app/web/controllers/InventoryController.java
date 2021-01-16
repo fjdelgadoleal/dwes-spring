@@ -22,7 +22,7 @@ public class InventoryController {
 	protected final Log logger = LogFactory.getLog(getClass());
 	
 	@Autowired //Lo comentamos para ponerlo de forma manual y solventar el problema que estamos teniendo con el Autowired
-	private ProductManager producManager;// = new SimpleProductManager();
+	private ProductManager producManager;
 	
 	@RequestMapping(value="/hello.htm")
 	public ModelAndView handleRequest() {

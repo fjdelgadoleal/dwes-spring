@@ -2,6 +2,9 @@ package es.iessoterohernandez.spring5app.business.servicies;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import es.iessoterohernandez.spring5app.business.entities.Product;
 
 public class SimpleProductManager implements ProductManager {
@@ -23,6 +26,7 @@ public class SimpleProductManager implements ProductManager {
 	public List<Product> getProducts() {
         return products;        
 	}
+	
 	
     public void setProducts(List<Product> products) {
         this.products = products;        
